@@ -8,15 +8,16 @@
 </head>
 <body>
     <div class="calc">
-        <form onSubmit="return false">
-            <div class="inputBox">
+        
+        <div class="inputBox">
                 <input type="text" id="screen" readonly >
-            </div>
-            <div class="keys">
+        </div>
+
+        <div class="keys">
             <div>
                 <button  class="sign-btn"  onclick='clearSrceen()'>CE</button>
                 <button class="sign-btn"  onclick='deleteVal()'>DEL</button>
-                <button class="sign-btn" onclick="appendToShow('%')">%</button>
+                <button class="sign-btn" onclick="appendToShow('/')">/</button>
                 <button class="sign-btn"  onclick='appendToShow("-")'>-</button>
             </div>
             <div>
@@ -43,8 +44,7 @@
                 <button class="eql-btn"  onclick='getResult()'>=</button>
                
             </div>
-            </div>
-        </form>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
