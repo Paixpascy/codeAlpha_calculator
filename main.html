@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href='main.css'>
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="calc">
+        <form onSubmit="return false">
+            <div class="inputBox">
+                <input type="text" id="screen" readonly >
+            </div>
+            <div class="keys">
+            <div>
+                <button  class="sign-btn"  onclick='clearSrceen()'>CE</button>
+                <button class="sign-btn"  onclick='deleteVal()'>DEL</button>
+                <button class="sign-btn" onclick="appendToShow('%')">%</button>
+                <button class="sign-btn"  onclick='appendToShow("-")'>-</button>
+            </div>
+            <div>
+                <button  onclick="appendToShow('9')">9</button>
+                <button  onclick='appendToShow("8")'>8</button>
+                <button  onclick='appendToShow("7")'>7</button>
+                <button class="sign-btn" onclick='appendToShow("*")'>*</button>
+            </div>
+            <div>
+                <button onclick='appendToShow("6")'>6</button>
+                <button  onclick='appendToShow("5")'>5</button>
+                <button  onclick='appendToShow("4")'>4</button>
+                <button class="sign-btn" onclick='appendToShow("+")'>+</button>
+            </div>
+            <div>
+                <button  onclick='appendToShow("3")'>3</button>
+                <button  onclick='appendToShow("2")'>2</button>
+                <button  onclick='appendToShow("1")'>1</button>
+                <button class="sign-btn"  onclick='appendToShow(".")'>.</button>
+            </div>
+            <div>
+                <button  onclick='appendToShow("00")'>00</button>
+                <button  onclick='appendToShow("0")'>0</button>
+                <button class="eql-btn"  onclick='getResult()'>=</button>
+               
+            </div>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
